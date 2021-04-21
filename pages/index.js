@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Avatar from "../components/Avatar";
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
         <div className='flex space-x-4 items-center'>
           <p className='link'>Gmail</p>
           <p className='link'>Images</p>
+
+          <Avatar url='https://lh3.googleusercontent.com/ogw/ADGmqu_IK-sDxmI8w0NscwuaTeX2ERnzqBkmuZS6m4c5DA=s32-c-mo' />
         </div>
       </header>
     </div>
