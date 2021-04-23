@@ -1,12 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 import Avatar from "../components/Avatar";
+import Footer from "../components/Footer";
 import { MicrophoneIcon, ViewGridIcon } from "@heroicons/react/solid";
 import { SearchIcon } from "@heroicons/react/outline";
 
 export default function Home() {
   return (
-    <div>
+    <div className='flex flex-col items-center justify-center h-screen'>
       <Head>
         <title>Google</title>
         <link rel='icon' href='/favicon.ico' />
@@ -28,7 +29,7 @@ export default function Home() {
         </div>
       </header>
 
-      <form className='flex flex-col items-center mt-44'>
+      <form className='flex flex-col items-center mt-44 flex-grow w-4/5'>
         <Image
           src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
           width={300}
@@ -45,6 +46,8 @@ export default function Home() {
           <buton className='btn'>I'm Feeling Lucky</buton>
         </div>
       </form>
+
+      <Footer />
     </div>
   );
 }
