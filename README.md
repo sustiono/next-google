@@ -1,6 +1,6 @@
 # NEXT GOOGLE
 
-Next Google is a Google Search clone application that is created using Next.js and Tailwind
+Next Google is a Google Search clone application that is created using Next.js and Tailwind. Learning by doing from youtube channel [Sonny Sangha](https://www.youtube.com/user/ssangha32)
 
 ## Run app in development server
 
