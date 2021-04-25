@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import { XIcon, SearchIcon } from "@heroicons/react/solid";
 import { MicrophoneIcon } from "@heroicons/react/outline";
 import Avatar from "./Avatar";
+import HeaderOptions from "./HeaderOptions";
 
 const Header = () => {
   const router = useRouter();
@@ -38,8 +39,8 @@ const Header = () => {
             className='h-7 sm:mr-3 text-gray-500 cursor-pointer transition duration-100 transform hover:scale-125'
             onClick={() => (searchInputRef.current.value = "")}
           />
-          <MicrophoneIcon className='mr-3 h-6 hidden sm:inline-flex text-blue-500 border-l-2 pl-4 border-gray-3 00' />
-          <SearchIcon className='h-6 hidden sm:inline-flex text-blue-500' />
+          <MicrophoneIcon className='mr-3 h-6 hidden sm:inline-flex text-blue-500 border-l-2 pl-4 border-gray-300 cursor-pointer' />
+          <SearchIcon className='h-6 hidden sm:inline-flex text-blue-500 cursor-pointer' />
           <button hidden type='submit' onClick={search}>
             Search
           </button>
@@ -49,6 +50,8 @@ const Header = () => {
           url='https://avatars.githubusercontent.com/u/19564599?v=4'
         />
       </div>
+
+      <HeaderOptions />
     </header>
   );
 };
