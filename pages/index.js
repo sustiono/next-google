@@ -64,7 +64,7 @@ export default function Home() {
         </div>
 
         <div className='flex flex-col space-y-2 justify-center mt-8 sm:space-y-0 sm:flex-row sm:space-x-4'>
-          <buton className='btn' onClick={search}>
+          <buton type='submit' className='btn' onClick={search}>
             Google Search
           </buton>
           <buton className='btn'>I'm Feeling Lucky</buton>
